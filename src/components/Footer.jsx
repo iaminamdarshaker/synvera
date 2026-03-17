@@ -46,7 +46,7 @@ const Footer = () => {
           align-items: center;
           justify-content: center;
           color: var(--accent-teal);
-          border: 1px solid rgba(100, 255, 218, 0.1);
+          border: 1px solid rgba(0, 87, 145, 0.1);
           transition: all 0.3s ease;
         }
         .social-icon:hover {

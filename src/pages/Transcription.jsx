@@ -7,14 +7,14 @@ import Button from '../components/common/Button';
 
 const Transcription = () => {
   const services = [
-    { icon: Mic, title: "Audio transcription", bg: "#eff6ff", border: "#bfdbfe", text: "#1e40af" },
-    { icon: Video, title: "Video transcription", bg: "#f0fdfa", border: "#9cebe0", text: "#0f766e" },
+    { icon: Mic, title: "Audio transcription", bg: "#eff6ff", border: "#bfdbfe", text: "#005791" },
+    { icon: Video, title: "Video transcription", bg: "#eff6ff", border: "#bfdbfe", text: "#005791" },
     { icon: FileText, title: "Interview transcription", bg: "#f5f3ff", border: "#ddd6fe", text: "#5b21b6" },
-    { icon: Headphones, title: "Podcast transcription", bg: "#eff6ff", border: "#bfdbfe", text: "#1e40af" },
-    { icon: Globe, title: "Meeting & webinar transcription", bg: "#f0fdfa", border: "#9cebe0", text: "#0f766e" },
+    { icon: Headphones, title: "Podcast transcription", bg: "#eff6ff", border: "#bfdbfe", text: "#005791" },
+    { icon: Globe, title: "Meeting & webinar transcription", bg: "#eff6ff", border: "#bfdbfe", text: "#005791" },
     { icon: FileText, title: "Research transcription", bg: "#f5f3ff", border: "#ddd6fe", text: "#5b21b6" },
-    { icon: Briefcase, title: "Corporate transcription", bg: "#eff6ff", border: "#bfdbfe", text: "#1e40af" },
-    { icon: Shield, title: "Legal transcription", bg: "#f0fdfa", border: "#9cebe0", text: "#0f766e" },
+    { icon: Briefcase, title: "Corporate transcription", bg: "#eff6ff", border: "#bfdbfe", text: "#005791" },
+    { icon: Shield, title: "Legal transcription", bg: "#eff6ff", border: "#bfdbfe", text: "#005791" },
     { icon: Shield, title: "Medical transcription", bg: "#f5f3ff", border: "#ddd6fe", text: "#5b21b6" }
   ];
 

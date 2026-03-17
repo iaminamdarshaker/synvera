@@ -121,7 +121,7 @@ const Home = () => {
           right: -10%;
           width: 60%;
           height: 140%;
-          background: radial-gradient(circle, rgba(100, 255, 218, 0.05) 0%, rgba(10, 25, 47, 0.05) 100%);
+          background: radial-gradient(circle, rgba(0, 87, 145, 0.05) 0%, rgba(10, 25, 47, 0.05) 100%);
           filter: blur(80px);
           z-index: 0;
           animation: floatGradient 15s infinite alternate ease-in-out;

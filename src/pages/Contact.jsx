@@ -66,7 +66,7 @@ const Contact = () => {
         .form-group input, .form-group select, .form-group textarea {
           width: 100%; padding: 14px; border: 1px solid #e2e8f0; border-radius: 10px; font-family: inherit; font-size: 1rem; transition: var(--transition);
         }
-        .form-group input:focus { outline: none; border-color: var(--accent-teal); box-shadow: 0 0 0 3px rgba(100, 255, 218, 0.1); }
+        .form-group input:focus { outline: none; border-color: var(--accent-teal); box-shadow: 0 0 0 3px rgba(0, 87, 145, 0.1); }
         
         .contact-info { padding: 20px; }
         .info-card { background: var(--bg-light); padding: 32px; border-radius: 16px; margin-bottom: 24px; display: flex; gap: 20px; }
