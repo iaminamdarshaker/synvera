@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Globe, Languages, FileText, Scale, Users, MapPin, ArrowRight, Quote, Shield } from 'lucide-react';
 import HeroImage from '../assets/images/hero-globe.png';
@@ -56,7 +57,9 @@ const Translation = () => {
           <motion.div initial={{ opacity: 0, x: -40 }} animate={{ opacity: 1, x: 0 }}>
              <h1 className="hero-title">Professional Translation & Interpretation</h1>
              <p className="hero-subtitle">Culturally nuanced, accurate, and industry-specific language solutions for a global world.</p>
-             <Button variant="primary" style={{ marginTop: '20px' }}>Request Quote</Button>
+             <Link to="/contact">
+               <Button variant="primary" style={{ marginTop: '20px' }}>Request Quote</Button>
+             </Link>
           </motion.div>
           <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }}>
             <img src={HeroImage} alt="Translation Globe" style={{ width: '100%' }} />

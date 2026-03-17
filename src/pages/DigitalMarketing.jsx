@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Share2, Layout, Video, Palette, Megaphone, Target, BarChart, Globe, CheckCircle } from 'lucide-react';
 import HeroImage from '../assets/images/hero-marketing.png';
@@ -44,7 +45,9 @@ const DigitalMarketing = () => {
              <h1 className="hero-title">Multilingual Digital Marketing & Creative</h1>
              <p className="hero-subtitle">Engage global audiences with culturally-aligned visuals and messaging that drives results.</p>
              <div style={{ marginTop: '40px' }}>
-               <Button variant="primary">Request Quote</Button>
+               <Link to="/contact">
+                 <Button variant="primary">Request Quote</Button>
+               </Link>
              </div>
           </motion.div>
           <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }}>

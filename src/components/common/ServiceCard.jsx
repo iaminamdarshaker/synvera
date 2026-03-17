@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const ServiceCard = ({ title, description, benefits, icon: Icon, ctaText, ctaLink, illustration }) => {
@@ -90,12 +91,12 @@ const ServiceCard = ({ title, description, benefits, icon: Icon, ctaText, ctaLin
         ))}
       </ul>
       
-      <a href={ctaLink} className="btn-link">
+      <Link to={ctaLink} className="btn-link">
         {ctaText || 'View Services'} 
         <motion.span animate={{ x: [0, 5, 0] }} transition={{ repeat: Infinity, duration: 1.5 }}>
           →
         </motion.span>
-      </a>
+      </Link>
     </motion.div>
   );
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Mic, FileText, Globe, Clock, Shield, CheckCircle, Database, Headphones, Video, Table, FileVideo, Download } from 'lucide-react';
 import HeroImage from '../assets/images/hero-communication.png';
@@ -133,7 +134,9 @@ const Transcription = () => {
               </div>
             </div>
             <div style={{ marginTop: '40px' }}>
-              <Button variant="primary">Request Quote</Button>
+              <Link to="/contact">
+                <Button variant="primary">Request Quote</Button>
+              </Link>
             </div>
           </motion.div>
           <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }}>
@@ -249,7 +252,9 @@ const Transcription = () => {
              <div style={{ paddingLeft: '40px' }}>
                 <h2>Qualitative Research Transcription</h2>
                 <p style={{ color: 'var(--text-grey)', marginTop: '20px' }}>Specialized transcription for research interviews and focus groups. We deliver data ready for analysis in your preferred qualitative software or spreadsheet format.</p>
+              <Link to="/contact">
                 <Button variant="outline" style={{ marginTop: '30px' }}>Learn More</Button>
+              </Link>
              </div>
           </div>
         </div>
