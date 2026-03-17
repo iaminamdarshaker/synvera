@@ -97,9 +97,19 @@ const Transcription = () => {
         .step { display: flex; align-items: center; gap: 20px; margin-bottom: 24px; }
         .step-num { width: 32px; height: 32px; border-radius: 50%; background: var(--accent-teal); color: var(--primary-blue); display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; }
 
+        @media (max-width: 1024px) {
+          .service-hero { padding: 120px 0 60px; text-align: center; }
+          .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+          .hero-title { font-size: 2.2rem; }
+          .services-grid { grid-template-columns: repeat(2, 1fr); }
+        }
         @media (max-width: 768px) {
-          .hero-grid { grid-template-columns: 1fr; text-align: center; }
           .services-grid { grid-template-columns: 1fr; }
+          .hero-title { font-size: 2rem; }
+          .core-services { padding: 60px 0; }
+          .grid-2, .grid-3 { grid-template-columns: 1fr; text-align: center; }
+          .excel-section .grid { gap: 40px; }
+          .excel-section div { padding-left: 0 !important; }
         }
       `}} />
 

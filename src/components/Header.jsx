@@ -53,10 +53,18 @@ const Header = () => {
           justify-content: space-between;
         }
         .logo-img {
-          height: 90px;
+          height: 80px;
           width: auto;
           object-fit: contain;
-          mix-blend-mode: multiply;
+          transition: height 0.3s ease;
+        }
+        .is-scrolled .logo-img {
+          height: 60px;
+        }
+        @media (max-width: 768px) {
+          .logo-img {
+            height: 55px;
+          }
         }
 
         .nav-menu {

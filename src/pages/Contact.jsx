@@ -47,8 +47,14 @@ const Contact = () => {
   return (
     <div className="contact-page">
       <style dangerouslySetInnerHTML={{ __html: `
-        .contact-hero { padding: 100px 0 60px; background: #fff; text-align: center; }
-        .hero-title { font-size: 3.5rem; margin-bottom: 20px; }
+        .contact-hero { padding: 140px 0 60px; background: #fff; text-align: center; }
+        .hero-title { font-size: 3rem; margin-bottom: 20px; }
+        
+        @media (max-width: 768px) {
+          .contact-hero { padding: 120px 0 40px; }
+          .hero-title { font-size: 2rem; }
+          .contact-form { padding: 30px 20px; }
+        }
 
         .form-section { padding: 0 0 100px; }
         .form-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 80px; }
