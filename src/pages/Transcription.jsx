@@ -261,15 +261,15 @@ const Transcription = () => {
       </section>
 
       {/* Subtitling */}
-      <section style={{ background: 'var(--primary-blue)', color: '#fff' }}>
+      <section style={{ background: '#fff', color: 'var(--text-dark)' }}>
         <div className="container text-center" style={{ textAlign: 'center' }}>
-          <h2 style={{ color: '#fff' }}>Subtitling Services</h2>
-          <p style={{ color: 'var(--text-light)', margin: '20px auto', maxWidth: '700px' }}>Deliver your content to a global audience with professionally timed subtitles for YouTube, OTT, and corporate videos.</p>
+          <h2 style={{ color: 'var(--primary-blue)' }}>Subtitling Services</h2>
+          <p style={{ color: 'var(--text-grey)', margin: '20px auto', maxWidth: '700px' }}>Deliver your content to a global audience with professionally timed subtitles for YouTube, OTT, and corporate videos.</p>
           <div className="grid grid-3" style={{ marginTop: '40px' }}>
             {["SRT", "VTT", "ASS"].map((ext, i) => (
-              <div key={i} style={{ padding: '20px', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '12px' }}>
+              <div key={i} style={{ padding: '20px', border: '1px solid rgba(0,0,0,0.08)', borderRadius: '12px', background: 'var(--bg-light)' }}>
                 <FileVideo size={32} color="var(--accent-teal)" style={{ marginBottom: '10px' }} />
-                <p style={{ fontWeight: 700 }}>.{ext} Format</p>
+                <p style={{ fontWeight: 700, color: 'var(--text-dark)' }}>.{ext} Format</p>
               </div>
             ))}
           </div>
