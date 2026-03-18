@@ -231,47 +231,47 @@ const Transcription = () => {
         </div>
       </section>
 
-      {/* Audio to Excel */}
+      {/* Subtitling - moved up, now with default background */}
       <section className="excel-section">
+        <div className="container text-center" style={{ textAlign: 'center' }}>
+          <h2>Subtitling Services</h2>
+          <p style={{ color: 'var(--text-grey)', margin: '20px auto', maxWidth: '700px' }}>Deliver your content to a global audience with professionally timed subtitles for YouTube, OTT, and corporate videos.</p>
+          <div className="grid grid-3" style={{ marginTop: '40px' }}>
+            {["SRT", "VTT", "ASS"].map((ext, i) => (
+              <div key={i} style={{ padding: '20px', border: '1px solid rgba(0,0,0,0.08)', borderRadius: '12px', background: '#fff' }}>
+                <FileVideo size={32} color="var(--accent-teal)" style={{ marginBottom: '10px' }} />
+                <p style={{ fontWeight: 700 }}>.{ext} Format</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Qualitative Research - moved down, now with dark blue background */}
+      <section style={{ background: 'var(--primary-blue)', color: '#fff' }}>
         <div className="container">
           <div className="grid grid-2" style={{ alignItems: 'center' }}>
-             <div className="infographic">
-                <h3 style={{ marginBottom: '30px' }}>Audio to Excel Workflow</h3>
+             <div className="infographic" style={{ borderColor: 'rgba(255,255,255,0.1)' }}>
+                <h3 style={{ marginBottom: '30px', color: '#fff' }}>Audio to Excel Workflow</h3>
                 {[
                   "Question-wise mapping",
                   "Row based Excel data",
                   "Timestamp alignment",
                   "Optional tagging"
                 ].map((step, i) => (
-                  <div key={i} className="step">
+                  <div key={i} className="step" style={{ background: 'rgba(255,255,255,0.08)' }}>
                     <div className="step-num">{i + 1}</div>
-                    <span style={{ fontWeight: 600 }}>{step}</span>
+                    <span style={{ fontWeight: 600, color: '#fff' }}>{step}</span>
                   </div>
                 ))}
              </div>
              <div style={{ paddingLeft: '40px' }}>
-                <h2>Qualitative Research Transcription</h2>
-                <p style={{ color: 'var(--text-grey)', marginTop: '20px' }}>Specialized transcription for research interviews and focus groups. We deliver data ready for analysis in your preferred qualitative software or spreadsheet format.</p>
+                <h2 style={{ color: '#fff' }}>Qualitative Research Transcription</h2>
+                <p style={{ color: 'var(--text-light)', marginTop: '20px' }}>Specialized transcription for research interviews and focus groups. We deliver data ready for analysis in your preferred qualitative software or spreadsheet format.</p>
               <Link to="/contact">
-                <Button variant="outline" style={{ marginTop: '30px' }}>Learn More</Button>
+                <Button variant="outline" style={{ marginTop: '30px', color: '#fff', borderColor: '#fff' }}>Learn More</Button>
               </Link>
              </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Subtitling */}
-      <section style={{ background: 'var(--primary-blue)', color: '#fff' }}>
-        <div className="container text-center" style={{ textAlign: 'center' }}>
-          <h2 style={{ color: '#fff' }}>Subtitling Services</h2>
-          <p style={{ color: 'var(--text-light)', margin: '20px auto', maxWidth: '700px' }}>Deliver your content to a global audience with professionally timed subtitles for YouTube, OTT, and corporate videos.</p>
-          <div className="grid grid-3" style={{ marginTop: '40px' }}>
-            {["SRT", "VTT", "ASS"].map((ext, i) => (
-              <div key={i} style={{ padding: '20px', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '12px' }}>
-                <FileVideo size={32} color="var(--accent-teal)" style={{ marginBottom: '10px' }} />
-                <p style={{ fontWeight: 700 }}>.{ext} Format</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
