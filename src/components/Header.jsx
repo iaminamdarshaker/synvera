@@ -53,17 +53,17 @@ const Header = () => {
           justify-content: space-between;
         }
         .logo-img {
-          height: 80px;
+          height: 105px;
           width: auto;
           object-fit: contain;
           transition: height 0.3s ease;
         }
         .is-scrolled .logo-img {
-          height: 60px;
+          height: 80px;
         }
         @media (max-width: 768px) {
           .logo-img {
-            height: 55px;
+            height: 72px;
           }
         }
 

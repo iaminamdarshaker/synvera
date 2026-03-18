@@ -21,7 +21,7 @@ const Footer = () => {
           margin-bottom: 60px;
         }
         .footer-logo-img {
-          height: 70px;
+          height: 90px;
           width: auto;
           object-fit: contain;
           margin-bottom: 24px;
