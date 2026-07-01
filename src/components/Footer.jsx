@@ -160,7 +160,7 @@ const Footer = () => {
             <ul className="footer-contact">
               <li><MapPin size={18} /> <span>Gat No 24, Plot No 45, Friends Park, <br />Aurangabad City, Maharashtra, India 431001</span></li>
               <li><Mail size={18} /> <a href="mailto:transcriptions@synveraservices.com" style={{color: 'inherit'}}>transcriptions@synveraservices.com</a></li>
-              <li><Phone size={18} /> <a href="tel:9226646890" style={{color: 'inherit'}}>+91 92266 46890</a></li>
+              <li><Phone size={18} /> <a href="tel:9322700190" style={{color: 'inherit'}}>+91 92266 46890</a></li>
             </ul>
             <div style={{ marginTop: '20px', padding: '15px', background: 'rgba(255,255,255,0.05)', borderRadius: '8px' }}>
               <p style={{ fontSize: '0.85rem', color: 'var(--accent-teal)', fontWeight: '600' }}>Confidentiality Commitment</p>
